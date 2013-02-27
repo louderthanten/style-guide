@@ -1,0 +1,140 @@
+form {
+  
+}
+
+label,
+legend {
+  clear:both;
+  display:block;
+  font-weight:$regular;
+  font-family: $sans;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  @include font-size(38.904, 45);
+
+  &.error {
+    color:$red;
+    display: none;
+    font-family: $serif;
+    text-transform: none;
+    position: absolute;
+    left:0;
+    bottom:0;
+    @include font-size;
+  
+    &.block { display: block; }
+  }
+
+  sup {
+    color:$yellow;
+  }
+}
+
+.field {
+  clear:both;
+  position:relative;
+  @include wrap;
+  @include rem(padding, $line 0);
+  ul {
+    padding-left: 1.4em;
+  }
+  li {
+    color:$yellow;
+  }
+} 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="date"],
+input[type="datetime"],
+input[type="month"],
+input[type="week"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="color"] {
+  border: $solid;
+	font-family:$serif;
+	display:block;
+	outline:0;
+  width:100%;
+  color:$dark-grey;
+  margin-bottom: 12px;
+  padding:$line/2;
+	@include border-radius;
+  @include font-size(16, 24);
+
+  &.error {
+    background: lighten($red, 36%);
+    border:1px solid $red;
+    color:$red;
+  }
+}
+
+textarea {
+	@extend input[type="text"];
+	height: auto;
+  min-height: 192px;
+}
+#email-confirm {
+  display: none;
+}
+.option {
+  cursor: pointer;
+  text-transform: none;
+  font-family: $serif;
+  @include font-size(18, 30);
+}
+
+select {
+  margin-bottom: 12px;
+}
+
+button,
+.button,
+a.button:link,
+a.button:visited {
+  background-color: $red;
+  border:0;
+  color:$white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $sans;
+  font-weight: $regular;
+  padding:$line/2;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  @include font-size(64, 64);
+  @include border-radius;
+}
+button:hover,
+button:active,
+a.button:hover,
+a.button:active {
+    background: $blue;
+    color:$white;
+  }
+.progress {
+  position: relative;
+  width:50%;
+  @include rem(margin, $line/2 0);
+  .bar {
+    width:100%;
+    background:#000;
+    background:rgba(0,0,0,0.3d);
+    @include rem(height, $line/3);
+    @include border-radius(4px);
+  }
+  .percent {
+    background:$blue;
+    position: absolute;
+    top:0;
+    left:0;
+    width:0%;
+    @include rem(height, $line/3);
+    @include border-radius(4px);
+  }
+}

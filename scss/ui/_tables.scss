@@ -1,0 +1,111 @@
+table {
+    margin-bottom: $line;
+    width:100%;
+    color:$white;
+}
+th,
+td {
+    text-align: center;
+    //width:17%;
+    padding:$line/2;
+    vertical-align: middle;
+}
+th.icon {
+    //width:10%;
+    @include rem(min-width, $line*3);
+    img {
+        text-align: center;
+        width: 100%;
+       @include rem(max-width, $line*5); 
+    }
+    
+}
+th {
+    font-family: $sans;
+    text-transform: uppercase;
+}
+td {
+    font-weight: $bold;
+    @include font-size(23.338, 30);
+}
+tbody tr:nth-child(odd) {
+    td,
+    th {
+        background:#656566;
+        background:rgba(255,255,255,0.15);
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: $screenSmall) {
+    .responsive {
+        margin-bottom: 0;
+
+        td,
+        th {
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden; 
+        }
+        th {
+            letter-spacing: 0.1em;
+            @include font-size(24, 24);
+        }
+    }
+    
+    .pinned {
+        background:$dark-grey;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 33%;
+        overflow: hidden;
+        overflow-x: scroll;
+        border-right: 1px solid $grey;
+        
+        table {
+            border-right: none;
+            border-left: none;
+            width: 100%;
+            th {
+                padding-top: 0;
+                padding-bottom: 0;
+                vertical-align: middle;
+            }
+            td,
+            th {
+                white-space: nowrap;
+            }
+            td:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .table-wrapper {
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-right: 1px solid $grey;
+        
+        .scrollable {
+            overflow: scroll;
+            overflow-y: hidden;
+            
+            table {
+                margin-left: 33%;
+            }
+        }
+    }
+    
+
+    table.responsive th:first-child,
+    table.responsive td:first-child,
+    table.responsive.pinned td { display: none; }
+    
+}
+@media only screen and (min-width: $screenSmall) {
+    th {
+        @include font-size(38.904, 45);
+    }
+}
