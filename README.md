@@ -1,4 +1,4 @@
-# Louder Than Ten Style Guide Template
+# Louder Than Ten style guide template
 ====================
 
 A template to create simple website style guides.
