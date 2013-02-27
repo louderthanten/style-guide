@@ -3,29 +3,22 @@
 //   ========================================================================== */
 
 $white: #ffffff;
-$dark-grey:#424243;
-$grey: #BABAAE;
-$light-grey: #F3F3F1;
-$red: #DE4927;
-$blue: #9BC6D3;
-$yellow: #F3C045;
-$green: #7CB87D;
+$dark-grey:#333333;
+
 
 ///* =============================================================================
 //   Borders
 //   ========================================================================== */
 
-$solid: 1px solid $grey;
+$rule: 1px solid $dark-grey;
 
 ///* =============================================================================
 //   Font Stacks
 //   ========================================================================== */
 
 
-$serif: "ff-tisa-web-pro", Georgia, serif;
-$sans: "TrumpGothicEastMedium", "Helvetica Neue", sans-serif;
-//$sans: "alternate-gothic-no-1-d", "Helvetica Neue", sans-serif;
-$slab: "jubilat", Georgia, serif;
+$serif: Georgia, serif;
+$sans: "Helvetica Neue", sans-serif;
 
 
 // FONT WEIGHTS 
@@ -46,8 +39,8 @@ $black: 900;
 
 
 $root-n: 16;
-$line-n: 30;
-$base: 18;
+$line-n: 24;
+$base: 16;
 
 $root: $root-n * 1px;
 $line: $line-n * 1px;
@@ -59,17 +52,24 @@ $column: 100% / 14;
 //   Grid
 //   ========================================================================== */
 
+// USAGE
+// width: $c6*3; // This is 3 units of a 6 unit grid wide
+// margin-left: $c4*2; // This pushes the element 2 units (of a 4 element grid) to the left
+// @include wrap; // Recomended to change box sizing to border-box for easier styling and positining.
 
-//Three Columns
+// Have fun. Make as many as you like.
+
+//Three Column Grid
 $c3: 100% / 3;
-//Four Columns
+//Four Column Grid
 $c4: 100% / 4;
 
-//Eight Columns
+//Eight Column Grid
 $c6: 100% / 6;
-
-//Sixteen Columns
+//Sixteen Column Grid
 $c12: 100 / 12;
+
+
 
 
 
