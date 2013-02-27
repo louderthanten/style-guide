@@ -30,7 +30,7 @@
 
             <h3>Paragraphs</h3>
 
-            <p>Here are some paragraphs. This is the meat of our content and where most of our typographic decisions derrive from. Look inside the following paragraphs for examples of <a href="">links</a>, <strong>bold text</strong>, and <em>italics</em>.</p>
+            <p>Here are some paragraphs. This is the meat of our content and where most of our typographic decisions derrive from. Look inside the following paragraphs for examples of <a href="">links</a>, <strong>bold text</strong>, and <em>italics</em>. Here is a foonote reference<sup><a href="#fn1">*</a></sup></p>
 
             <p>Donec id elit non mi porta <em>gravida at eget</em> metus. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et <strong>magnis dis parturient</strong> montes, nascetur ridiculus mus.</p>
 
@@ -39,6 +39,8 @@
             <p>Duis mollis, est non <a href="">commodo luctus</a>, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. <strong>Vivamus sagittis</strong> lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+            
 
             <aside class="callout">
                 <h4>Callout</h4>
@@ -74,11 +76,14 @@
 
             <dl>
                 <dt>Definition title</dt>
-                <dd>Definition description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</dd>              <dt>Definition title</dt>
-                <dd>Definition description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</dd>              <dt>Definition title</dt>
+                <dd>Definition description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</dd>              
+                <dt>Definition title</dt>
+                <dd>Definition description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</dd>              
+                <dt>Definition title</dt>
                 <dd>Definition description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</dd>             
                 <dt>Definition title</dt>
-                <dd>Definition description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</dd>              <dt>Definition title</dt>
+                <dd>Definition description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</dd>              
+                <dt>Definition title</dt>
                 <dd>Definition description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</dd>
             </dl>
 
@@ -188,6 +193,36 @@
                     </div>
                 </fieldset>
                 <fieldset>
+                    <legend><h3>Selects</h3></legend>
+                    <div class="field">
+                        <label for="select">Select Dropdown</label>
+                        <select name="select">
+                            <option value="selection">Select option</option>
+                            <option value="selection">Select option</option>
+                            <option value="selection">Select option</option>
+                            <option value="selection">Select option</option>
+                            <option value="selection">Select option</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="multi-select">Multi-select</label>
+                        <select name="multi-select" multiple>
+                            <option value="selection">Select option</option>
+                            <option value="selection">Select option</option>
+                            <option value="selection">Select option</option>
+                            <option value="selection">Select option</option>
+                            <option value="selection">Select option</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><h3>File uploads</h3></legend>
+                    <div class="field">
+                        <label for="file">File upload</label>
+                        <input type="file" name="file" value="" />
+                    </div>
+                </fieldset>
+                <fieldset>
                     <legend><h3>Buttons</h3></legend>
                     <div class="field">
                         <button type="submit">Submit button</button>
@@ -232,6 +267,47 @@
                 </fieldset>
             </form>
 
+        </section>
+
+        <section class="tables">
+            <h2>Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Table header</th>
+                        <th>Table header</th>
+                        <th>Table header</th>
+                        <th>Table header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Table data</th>
+                        <td>10</td>
+                        <td>1000</td>
+                        <td>100000</td>
+                    </tr>                      
+                    <tr>
+                        <th>Table data</th>
+                        <td>10</td>
+                        <td>1000</td>
+                        <td>100000</td>
+                    </tr>                      
+                    <tr>
+                        <th>Table data</th>
+                        <td>10</td>
+                        <td>1000</td>
+                        <td>100000</td>
+                    </tr>                      
+                    <tr>
+                        <th>Table data</th>
+                        <td>10</td>
+                        <td>1000</td>
+                        <td>100000</td>
+                    </tr>                    
+
+                </tbody>
+            </table>
         </section>
       
     </div>
