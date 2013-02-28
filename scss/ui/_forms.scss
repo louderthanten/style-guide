@@ -2,6 +2,15 @@ form {
   
 }
 
+fieldset {
+  @include clearfix;
+  @include rem(padding, $line 0);
+  position: relative;
+  border-top: $rule;
+  margin:0;
+
+}
+
 label,
 legend {
 
@@ -44,6 +53,7 @@ input[type="color"] {
   @include rem(padding, $line/4 $line/2);
   @include font-size;
   @include border-radius(5px);
+  -webkit-appearance: none;
 
   &.error {
     border:$red-rule;
@@ -118,18 +128,17 @@ a.button:active {
   a.button {
     margin:0;
     display: block;
-    float:left;
-    border-right:$white-rule;
+    border-bottom: $white-rule;
     @include border-radius(0px);
 
     &:first-child {
-      @include border-bottom-left-radius(5px);
       @include border-top-left-radius(5px);
+      @include border-top-right-radius(5px);
     }
     &:last-child {
       @include border-bottom-right-radius(5px);
-      @include border-top-right-radius(5px);
-      border-right:0;
+      @include border-bottom-left-radius(5px);
+      border-bottom:0;
     }
   }
 }
@@ -137,29 +146,32 @@ a.button:active {
 .button-groups {
   @include clearfix;
   position:relative;
+}
 
-  .button-group {
+@media only screen and (min-width: $screenSmall) {
+  .button-groups .button-group {
     float:left;
     @include rem(margin-right, $line);
   }
-}
+  .button-group {
 
-@media only screen and (max-width: $screenSmall) {
-  .button-group a.button {
-    float:none;
-    border-right:0;
-    border-bottom: $white-rule;
+    a.button {
+      float:left;
+      border-right:$white-rule;
+      border-bottom: 0;
+      @include border-radius(0px);
 
-    &:first-child {
-      @include border-bottom-left-radius(0px);
-      @include border-top-right-radius(5px);
+      &:first-child {
+        @include border-bottom-left-radius(5px);
+        @include border-top-left-radius(5px);
+        @include border-top-right-radius(0px);
+      }
+      &:last-child {
+        @include border-bottom-right-radius(5px);
+        @include border-top-right-radius(5px);
+        @include border-bottom-left-radius(0px);
+        border-right:0;
+      }
     }
-    &:last-child {
-      @include border-top-right-radius(0px);
-      @include border-bottom-right-radius(5px);
-      @include border-bottom-left-radius(5px);
-      border-bottom:0;
-    }
-
   }
 }

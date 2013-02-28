@@ -38,15 +38,22 @@ h6 {
 p {
     @include hyphens;
 }
+.lead {
+    @include font-size(24, 36);
+    @include rem(margin-bottom, $line/2);
+}
 p + p {
     text-indent: 2.5em;
 }
 br + p {
     @include rem(margin-bottom, $line);
 }
-br + p + p {
+br + p + p,
+.lead + p {
     text-indent: 0;
 }
+
+
 
 strong {
     font-weight: $bold;
