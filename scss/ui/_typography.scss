@@ -23,16 +23,16 @@ h2 {
     @include font-size(48, 56);
 }
 h3 {
-    @include font-size(30, 48);
+    @include font-size(36, 48);
 }
 h4 {
-    @include font-size(24, 36);
+    @include font-size(30, 36);
 }
 h5 {
-    @include font-size(18, 24);
+    @include font-size(24, 30);
 }
 h6 {
-    @include font-size(16, 24);
+    @include font-size(18, 24);
 }
 
 .content {
@@ -63,6 +63,16 @@ strong {
 em {
     font-style: italic;
 }
+abbr {
+    cursor: help;
+
+    &.acr {
+        @include font-size(14, 24);
+    }
+}
+.amp {
+    font-style: italic;
+}
 small {
     @include font-size(14, 18);
 }
@@ -79,9 +89,21 @@ ul,
 ol,
 dd {
     margin-bottom: $line;
+
+    ul,
+    ol {
+        margin-left:2em;
+        margin-bottom: 0;
+    }
 }
 dt {
     font-weight: $bold;
+}
+
+nav {
+    ul {
+        list-style: none;
+    }
 }
 
 blockquote {
