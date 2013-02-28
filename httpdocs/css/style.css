@@ -84,6 +84,20 @@ td {
 /* =============================================================================
    Font Embeds
    ========================================================================== */
+/* line 1, ../../scss/global/_layout.scss */
+section {
+  position: relative;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 72px 0;
+  padding:  4.5rem 0;
+}
+
+/* line 6, ../../scss/global/_layout.scss */
+.container {
+  margin: 0 7.14286%;
+}
+
 /* line 4, ../../scss/ui/_typography.scss */
 body {
   font-family: Georgia, serif;

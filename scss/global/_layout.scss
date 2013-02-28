@@ -1,0 +1,8 @@
+section {
+    position: relative;
+    @include clearfix;
+    @include rem(padding, $line*3 0);
+}
+.container {
+    margin:0 $column;
+}
