@@ -1,4 +1,12 @@
 /* line 10, ../../../scss/pages/style-guide.scss */
+.header {
+  background: #333333;
+  color: white;
+  padding: 24px 0;
+  padding:  1.5rem 0;
+}
+
+/* line 16, ../../../scss/pages/style-guide.scss */
 .swatch {
   margin: 12px;
   margin: 0.75rem;
@@ -22,17 +30,17 @@
   height: 10px;
 }
 
-/* line 22, ../../../scss/pages/style-guide.scss */
+/* line 28, ../../../scss/pages/style-guide.scss */
 .color1 {
   background: #333333;
 }
 
-/* line 25, ../../../scss/pages/style-guide.scss */
+/* line 31, ../../../scss/pages/style-guide.scss */
 .color2 {
   background: blue;
 }
 
-/* line 28, ../../../scss/pages/style-guide.scss */
+/* line 34, ../../../scss/pages/style-guide.scss */
 .color3 {
   background: red;
 }

@@ -7,6 +7,12 @@
 @import "settings/variables";
 @import "settings/mixins";
 
+.header {
+    background: $dark-grey;
+    color:$white;
+    @include rem(padding, $line 0);
+}
+
 .swatch {
     @include rem(margin, $line/2);
     @include border-radius(500px);
