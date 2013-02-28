@@ -304,7 +304,12 @@ a:hover, a:active {
   color: blue;
 }
 
-/* line 150, ../../scss/ui/_typography.scss */
+/* line 136, ../../scss/ui/_typography.scss */
+.error {
+  color: red;
+}
+
+/* line 153, ../../scss/ui/_typography.scss */
 .wf-loading p,
 .wf-loading h1,
 .wf-loading h2,
@@ -349,26 +354,27 @@ fieldset {
   *zoom: 1;
   padding: 24px 0;
   padding:  1.5rem 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   position: relative;
-  border-top: 1px solid #333333;
-  margin: 0;
+  display: block;
+  border-bottom: 1px solid #333333;
 }
 
-/* line 17, ../../scss/ui/_forms.scss */
+/* line 18, ../../scss/ui/_forms.scss */
 label.error,
 legend.error {
-  display: none;
   position: absolute;
   left: 0;
   bottom: 0;
 }
-/* line 23, ../../scss/ui/_forms.scss */
+/* line 24, ../../scss/ui/_forms.scss */
 label.error.block,
 legend.error.block {
   display: block;
 }
 
-/* line 27, ../../scss/ui/_forms.scss */
+/* line 28, ../../scss/ui/_forms.scss */
 .field {
   clear: both;
   position: relative;
@@ -379,11 +385,11 @@ legend.error.block {
   -o-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 
-/* line 47, ../../scss/ui/_forms.scss */
+/* line 48, ../../scss/ui/_forms.scss */
 input[type="text"], textarea,
 input[type="email"],
 input[type="tel"],
@@ -414,7 +420,7 @@ input[type="color"] {
   border-radius: 5px;
   -webkit-appearance: none;
 }
-/* line 58, ../../scss/ui/_forms.scss */
+/* line 59, ../../scss/ui/_forms.scss */
 input[type="text"].error, textarea.error,
 input[type="email"].error,
 input[type="tel"].error,
@@ -432,13 +438,13 @@ input[type="color"].error {
   color: red;
 }
 
-/* line 64, ../../scss/ui/_forms.scss */
+/* line 65, ../../scss/ui/_forms.scss */
 textarea {
   height: auto;
   min-height: 240px;
 }
 
-/* line 78, ../../scss/ui/_forms.scss */
+/* line 79, ../../scss/ui/_forms.scss */
 button,
 .button,
 input[type="submit"],
@@ -462,7 +468,7 @@ a.button:visited {
   font-family: "Helvetica Neue", sans-serif;
   text-align: center;
 }
-/* line 90, ../../scss/ui/_forms.scss */
+/* line 91, ../../scss/ui/_forms.scss */
 button.small,
 .button.small,
 input[type="submit"].small,
@@ -474,7 +480,7 @@ a.button:visited.small {
   padding: 4px 8px;
   padding:  0.25rem 0.5rem;
 }
-/* line 94, ../../scss/ui/_forms.scss */
+/* line 95, ../../scss/ui/_forms.scss */
 button.large,
 .button.large,
 input[type="submit"].large,
@@ -486,7 +492,7 @@ a.button:visited.large {
   padding: 12px 24px;
   padding:  0.75rem 1.5rem;
 }
-/* line 99, ../../scss/ui/_forms.scss */
+/* line 100, ../../scss/ui/_forms.scss */
 button.disabled,
 .button.disabled,
 input[type="submit"].disabled,
@@ -495,7 +501,7 @@ a.button:visited.disabled {
   background: #cccccc;
   cursor: default;
 }
-/* line 104, ../../scss/ui/_forms.scss */
+/* line 105, ../../scss/ui/_forms.scss */
 button.blue,
 .button.blue,
 input[type="submit"].blue,
@@ -503,7 +509,7 @@ a.button:link.blue,
 a.button:visited.blue {
   background: blue;
 }
-/* line 108, ../../scss/ui/_forms.scss */
+/* line 109, ../../scss/ui/_forms.scss */
 button.blue:hover, button.blue:active,
 .button.blue:hover,
 .button.blue:active,
@@ -516,7 +522,7 @@ a.button:visited.blue:active {
   background: red;
 }
 
-/* line 118, ../../scss/ui/_forms.scss */
+/* line 119, ../../scss/ui/_forms.scss */
 button:hover,
 button:active,
 input[type="submit"]:hover,
@@ -526,7 +532,7 @@ a.button:active {
   background: blue;
 }
 
-/* line 122, ../../scss/ui/_forms.scss */
+/* line 123, ../../scss/ui/_forms.scss */
 .button-group {
   overflow: hidden;
   *zoom: 1;
@@ -535,7 +541,7 @@ a.button:active {
   position: relative;
   display: block;
 }
-/* line 128, ../../scss/ui/_forms.scss */
+/* line 129, ../../scss/ui/_forms.scss */
 .button-group a.button {
   margin: 0;
   display: block;
@@ -546,7 +552,7 @@ a.button:active {
   -o-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 134, ../../scss/ui/_forms.scss */
+/* line 135, ../../scss/ui/_forms.scss */
 .button-group a.button:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -555,7 +561,7 @@ a.button:active {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 138, ../../scss/ui/_forms.scss */
+/* line 139, ../../scss/ui/_forms.scss */
 .button-group a.button:last-child {
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-right-radius: 5px;
@@ -566,7 +572,7 @@ a.button:active {
   border-bottom: 0;
 }
 
-/* line 146, ../../scss/ui/_forms.scss */
+/* line 147, ../../scss/ui/_forms.scss */
 .button-groups {
   overflow: hidden;
   *zoom: 1;
@@ -574,14 +580,14 @@ a.button:active {
 }
 
 @media only screen and (min-width: 49em) {
-  /* line 152, ../../scss/ui/_forms.scss */
+  /* line 153, ../../scss/ui/_forms.scss */
   .button-groups .button-group {
     float: left;
     margin-right: 24px;
     margin-right: 1.5rem;
   }
 
-  /* line 158, ../../scss/ui/_forms.scss */
+  /* line 159, ../../scss/ui/_forms.scss */
   .button-group a.button {
     float: left;
     border-right: 1px solid white;
@@ -592,7 +598,7 @@ a.button:active {
     -o-border-radius: 0px;
     border-radius: 0px;
   }
-  /* line 164, ../../scss/ui/_forms.scss */
+  /* line 165, ../../scss/ui/_forms.scss */
   .button-group a.button:first-child {
     -moz-border-radius-bottomleft: 5px;
     -webkit-border-bottom-left-radius: 5px;
@@ -604,7 +610,7 @@ a.button:active {
     -webkit-border-top-right-radius: 0px;
     border-top-right-radius: 0px;
   }
-  /* line 169, ../../scss/ui/_forms.scss */
+  /* line 170, ../../scss/ui/_forms.scss */
   .button-group a.button:last-child {
     -moz-border-radius-bottomright: 5px;
     -webkit-border-bottom-right-radius: 5px;

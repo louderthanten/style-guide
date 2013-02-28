@@ -49,7 +49,7 @@
 
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. <strong>Vivamus sagittis</strong> lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
                     <br />
-                    <small id="fn1"><sup>*</sup> Here is some fine print. It can be used for the little stuff, like this footnote.</small> 
+                    <p id="fn1"><small><sup>*</sup> Here is some fine print. It can be used for the little stuff, like this footnote.</small></p>
 
                 </div>
 
@@ -128,6 +128,7 @@
         <section class="colors">
             <div class="container">        
                 <h2>Site colours</h2>
+                <hr />
                 <div class="swatch color1">
                     dark-grey
                 </div>
@@ -144,8 +145,8 @@
             <div class="container">
                 
                 <h2>Form elements</h2>
+                <hr />
                 <form action="" method="post">
-                            
                     <fieldset>
                         <legend><h3>Text Inputs</h3></legend>
                     
@@ -205,6 +206,12 @@
                         <div class="field">
                             <label for="textarea">Textarea</label>
                             <textarea name="textarea"></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label for="error">Invalid input</label>
+                            <input type="text" name="error" value="Bad input" class="error" placeholder="" />
+                            <label class="error">Error message for invalid field.</label>
                         </div>
 
                     </fieldset>
@@ -312,7 +319,7 @@
         <section class="media">
             <div class="container">
                 <h2>Media</h2>
-
+                <hr />
                 <figure>
                     <img src="http://placehold.it/1600x900&text=Image" />
                     <figcaption>Explanatory caption to compliment image. <span class="source">Photographer: First Last</span></figcaption>
@@ -324,6 +331,7 @@
             <div class="container">
                         
                 <h2>Tables</h2>
+                <hr />
                 <table>
                     <thead>
                         <tr>

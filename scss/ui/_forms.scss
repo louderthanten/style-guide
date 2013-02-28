@@ -5,9 +5,10 @@ form {
 fieldset {
   @include clearfix;
   @include rem(padding, $line 0);
+  @include rem(margin-bottom, $line);
   position: relative;
-  border-top: $rule;
-  margin:0;
+  display: block;
+  border-bottom: $rule;
 
 }
 
@@ -15,7 +16,7 @@ label,
 legend {
 
   &.error {
-    display: none;
+    //display: none;
     position: absolute;
     left:0;
     bottom:0;
@@ -29,7 +30,7 @@ legend {
   position:relative;
   @include wrap;
   padding:0;
-  @include rem(margin-bottom, $line);
+  @include rem(padding-bottom, $line);
 } 
 
 input[type="text"],
