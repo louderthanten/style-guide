@@ -1,8 +1,15 @@
 table {
-    margin-bottom: $line;
+    @include rem(margin-bottom, $line); 
     width:100%;
 }
 th,
 td {
+    border:$rule;
+    text-align: left;
+    font-family: $sans;
+    @include rem(padding, $line/4);
+}
 
+th {
+    background:$grey;
 }

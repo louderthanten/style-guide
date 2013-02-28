@@ -58,6 +58,10 @@ small {
     @include font-size(14, 18);
 }
 
+.content {
+    @include rem(margin-bottom, $line);
+}
+
 ul,
 ol,
 dd {

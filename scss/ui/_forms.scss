@@ -85,6 +85,20 @@ a.button:visited {
     @include font-size(30.006, 40);
     @include rem(padding, $line/2 $line);
   }
+
+  &.disabled {
+    background:$grey;
+    cursor: default;
+  }
+
+  &.blue {
+    background: $blue;
+
+    &:hover,
+    &:active {
+      background: $red;
+    }
+  }
 }
 button:hover,
 button:active,
