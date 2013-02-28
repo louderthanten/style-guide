@@ -160,13 +160,19 @@ h6 {
 }
 
 /* line 38, ../../scss/ui/_typography.scss */
+.content {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* line 42, ../../scss/ui/_typography.scss */
 p {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 }
 
-/* line 41, ../../scss/ui/_typography.scss */
+/* line 45, ../../scss/ui/_typography.scss */
 .lead {
   font-size: 24px;
   font-size: 1.5rem;
@@ -175,59 +181,64 @@ p {
   margin-bottom: 0.75rem;
 }
 
-/* line 45, ../../scss/ui/_typography.scss */
+/* line 49, ../../scss/ui/_typography.scss */
 p + p {
   text-indent: 2.5em;
 }
 
-/* line 48, ../../scss/ui/_typography.scss */
+/* line 52, ../../scss/ui/_typography.scss */
 br + p {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
-/* line 52, ../../scss/ui/_typography.scss */
+/* line 56, ../../scss/ui/_typography.scss */
 br + p + p,
 .lead + p {
   text-indent: 0;
 }
 
-/* line 58, ../../scss/ui/_typography.scss */
+/* line 60, ../../scss/ui/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 61, ../../scss/ui/_typography.scss */
+/* line 63, ../../scss/ui/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 64, ../../scss/ui/_typography.scss */
+/* line 66, ../../scss/ui/_typography.scss */
 small {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.28571;
 }
 
-/* line 68, ../../scss/ui/_typography.scss */
-.content {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+/* line 70, ../../scss/ui/_typography.scss */
+figcaption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+}
+/* line 73, ../../scss/ui/_typography.scss */
+figcaption .source {
+  float: right;
 }
 
-/* line 74, ../../scss/ui/_typography.scss */
+/* line 80, ../../scss/ui/_typography.scss */
 ul,
 ol,
 dd {
   margin-bottom: 24px;
 }
 
-/* line 77, ../../scss/ui/_typography.scss */
+/* line 83, ../../scss/ui/_typography.scss */
 dt {
   font-weight: 700;
 }
 
-/* line 81, ../../scss/ui/_typography.scss */
+/* line 87, ../../scss/ui/_typography.scss */
 blockquote {
   padding: 0 15px;
   padding: 0 0.9375rem;
@@ -241,26 +252,26 @@ blockquote {
   margin:  1.5rem 0;
   border-left: 1px solid #333333;
 }
-/* line 86, ../../scss/ui/_typography.scss */
+/* line 92, ../../scss/ui/_typography.scss */
 blockquote p {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.5;
   font-style: italic;
 }
-/* line 90, ../../scss/ui/_typography.scss */
+/* line 96, ../../scss/ui/_typography.scss */
 blockquote .source {
   font-size: inherit;
   font-style: normal;
   text-align: right;
 }
 
-/* line 97, ../../scss/ui/_typography.scss */
+/* line 103, ../../scss/ui/_typography.scss */
 label {
   display: block;
 }
 
-/* line 101, ../../scss/ui/_typography.scss */
+/* line 107, ../../scss/ui/_typography.scss */
 sup {
   height: 0;
   line-height: 1;
@@ -269,7 +280,7 @@ sup {
   bottom: .5ex;
 }
 
-/* line 109, ../../scss/ui/_typography.scss */
+/* line 115, ../../scss/ui/_typography.scss */
 hr {
   border: 0;
   height: 0;
@@ -280,20 +291,20 @@ hr {
   margin-bottom: 1.5rem;
 }
 
-/* line 117, ../../scss/ui/_typography.scss */
+/* line 123, ../../scss/ui/_typography.scss */
 a {
   text-decoration: none;
 }
-/* line 121, ../../scss/ui/_typography.scss */
+/* line 127, ../../scss/ui/_typography.scss */
 a:link, a:visited {
   color: red;
 }
-/* line 125, ../../scss/ui/_typography.scss */
+/* line 131, ../../scss/ui/_typography.scss */
 a:hover, a:active {
   color: blue;
 }
 
-/* line 144, ../../scss/ui/_typography.scss */
+/* line 150, ../../scss/ui/_typography.scss */
 .wf-loading p,
 .wf-loading h1,
 .wf-loading h2,
