@@ -19,6 +19,8 @@ legend {
   clear:both;
   position:relative;
   @include wrap;
+  padding:0;
+  @include rem(margin-bottom, $line);
 } 
 
 input[type="text"],
@@ -38,9 +40,14 @@ input[type="color"] {
 	display:block;
 	outline:0;
   width:100%;
+  font-family: $serif;
+  @include rem(padding, $line/4 $line/2);
+  @include font-size;
+  @include border-radius(5px);
 
   &.error {
-
+    border:$red-rule;
+    color:$red;
   }
 }
 
@@ -56,16 +63,89 @@ select {
 
 button,
 .button,
+input[type="submit"],
 a.button:link,
 a.button:visited {
+  @include rem(padding, $line/4 $line/2);
+  @include border-radius(5px);
+  @include font-size;
+  border:0;
+  background: $red;
+  color:$white;
   cursor: pointer;
   display: inline-block;
   font-family: $sans;
   text-align: center;
+
+  &.small {
+    @include font-size(14, 20);
+    @include rem(padding, $line/6 $line/3);
+  }
+  &.large {
+    @include font-size(30.006, 40);
+    @include rem(padding, $line/2 $line);
+  }
 }
 button:hover,
 button:active,
+input[type="submit"]:hover,
+input[type="submit"]:active,
 a.button:hover,
 a.button:active {
+  background:$blue;
+}
+
+.button-group {
+  @include clearfix;
+  @include rem(margin-bottom, $line);
+  position:relative;
+  display:block;
+
+  a.button {
+    margin:0;
+    display: block;
+    float:left;
+    border-right:$white-rule;
+    @include border-radius(0px);
+
+    &:first-child {
+      @include border-bottom-left-radius(5px);
+      @include border-top-left-radius(5px);
+    }
+    &:last-child {
+      @include border-bottom-right-radius(5px);
+      @include border-top-right-radius(5px);
+      border-right:0;
+    }
+  }
+}
+
+.button-groups {
+  @include clearfix;
+  position:relative;
+
+  .button-group {
+    float:left;
+    @include rem(margin-right, $line);
+  }
+}
+
+@media only screen and (max-width: $screenSmall) {
+  .button-group a.button {
+    float:none;
+    border-right:0;
+    border-bottom: $white-rule;
+
+    &:first-child {
+      @include border-bottom-left-radius(0px);
+      @include border-top-right-radius(5px);
+    }
+    &:last-child {
+      @include border-top-right-radius(0px);
+      @include border-bottom-right-radius(5px);
+      @include border-bottom-left-radius(5px);
+      border-bottom:0;
+    }
 
   }
+}

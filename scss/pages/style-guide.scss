@@ -1,0 +1,30 @@
+//Compass Imports
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/general/min";
+@import "compass/css3";
+
+//Power Moves: Sass Variables and mixins
+@import "settings/variables";
+@import "settings/mixins";
+
+.swatch {
+    @include rem(margin, $line/2);
+    @include border-radius(500px);
+    @include wrap;
+    @include rem(padding, $line*3);
+    position: relative;
+    display: inline-block;
+    text-indent: -99999px;
+    width: 10px;
+    height: 10px;
+}
+
+.color1 {
+    background:$dark-grey;
+}
+.color2 {
+    background: $blue;
+}
+.color3 {
+    background: $red;
+}

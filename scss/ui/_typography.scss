@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-
+    font-family: $sans;
 }
 
 h1 {
@@ -34,19 +34,65 @@ h5 {
 h6 {
     @include font-size(16, 24);
 }
-th {
 
+p {
+    @include hyphens;
+}
+p + p {
+    text-indent: 2.5em;
+}
+br + p {
+    @include rem(margin-bottom, $line);
+}
+br + p + p {
+    text-indent: 0;
 }
 
-
-p,
-ul,
-ol {
-    margin-bottom: $line/2;
+strong {
+    font-weight: $bold;
 }
-
+em {
+    font-style: italic;
+}
 small {
     @include font-size(14, 18);
+}
+
+ul,
+ol,
+dd {
+    margin-bottom: $line;
+}
+dt {
+    font-weight: $bold;
+}
+
+blockquote {
+    @include wrap;
+    @include rem(padding, $line/2 0 $line/2 $line*2);
+    @include rem(margin, $line 0);
+    border-left:$rule;
+    p {
+        @include font-size(24, 36);
+        font-style: italic;
+    }
+    .source {
+        font-size: inherit;
+        font-style: normal;
+        text-align: right;
+    }
+}
+
+label {
+    display: block;
+}
+
+sup {
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    position: relative;
+    bottom: .5ex;
 }
 
 hr {
@@ -56,29 +102,20 @@ hr {
     @include rem(margin-top, $line);
     @include rem(margin-bottom, $line);
 }
-strong {
-    font-weight: $bold;
-}
 
 a {
     text-decoration: none;
 
     &:link,
     &:visited {
-       
+       color: $red;
     }
     &:hover,
     &:active {
-      
+      color: $blue;
     }
 }
-sup {
-    height: 0;
-    line-height: 1;
-    vertical-align: baseline;
-    position: relative;
-    bottom: .5ex;
-}
+
 
 .wf-loading {
     p,
