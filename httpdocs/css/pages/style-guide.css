@@ -30,8 +30,10 @@ section {
   margin-bottom: 24px;
   height: 240px;
   float: left;
-  padding: 0 15px;
-  padding: 0 0.9375rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -63,8 +65,10 @@ section {
   -ms-border-radius: 500px;
   -o-border-radius: 500px;
   border-radius: 500px;
-  padding: 0 15px;
-  padding: 0 0.9375rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -126,4 +130,33 @@ section {
 /* line 101, ../../../scss/pages/style-guide.scss */
 .sixteen {
   width: 6.25%;
+}
+
+/* line 107, ../../../scss/pages/style-guide.scss */
+.folding.six, .folding.twelve {
+  display: none;
+}
+/* line 110, ../../../scss/pages/style-guide.scss */
+.folding.three {
+  display: block !important;
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 49em) {
+  /* line 118, ../../../scss/pages/style-guide.scss */
+  .folding.twelve {
+    display: none;
+  }
+  /* line 121, ../../../scss/pages/style-guide.scss */
+  .folding.six {
+    display: block;
+    width: 16.66667%;
+  }
+}
+@media only screen and (min-width: 80em) {
+  /* line 129, ../../../scss/pages/style-guide.scss */
+  .folding.twelve {
+    display: block;
+    width: 8.33333%;
+  }
 }

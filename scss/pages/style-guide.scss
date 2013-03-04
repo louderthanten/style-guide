@@ -101,3 +101,34 @@ section {
 .sixteen {
     width:$c16;
 }
+
+.folding {
+    &.six,
+    &.twelve {
+        display:none;
+    }
+    &.three {
+        display: block !important;
+        width:$c3;
+    }
+}
+
+@media only screen and (min-width: $screenSmall) {
+    .folding {
+        &.twelve {
+            display:none;
+        }
+        &.six {
+            display: block;
+            width:$c6;
+        }
+    }
+}
+@media only screen and (min-width: $screenMedium) {
+    .folding {
+        &.twelve {
+            display:block;
+            width:$c12;
+        }
+    }
+}

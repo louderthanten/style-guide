@@ -1,12 +1,9 @@
-//Gutters
-@mixin wrap {
-	padding: 0 15px;
-  padding: 0 0.9375rem;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-		 -o-box-sizing: border-box;
-			box-sizing: border-box;
-}
+//Setup Variables for Mixins
+$root-n: 16;
+$root: $root-n * 1px;
+$em: $base * 1;
+
+
 
 
 @mixin font-size($px_value: $base, $baseline: $line-n) {
@@ -68,4 +65,15 @@
         $rem-values: append($rem-values, $value / $baseline-rem); } }
     // Return the property and its list of converted values
     #{$property}: $rem-values; }
+}
+
+//Gutters
+@mixin wrap {
+  @include rem(padding-left, $line/2);
+  @include rem(padding-right, $line/2);
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     -o-box-sizing: border-box;
+      box-sizing: border-box;
 }

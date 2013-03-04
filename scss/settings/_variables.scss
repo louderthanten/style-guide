@@ -43,14 +43,13 @@ $black: 900;
 //   ========================================================================== */
 
 
-$root-n: 16;
-$line-n: 24;
-$base: 16;
+$line-n: 24; // Set the line height (in px) Also determines gutter width.
+$line: $line-n * 1px; //Convert to pixels for common use
+$base: 16; // Set the base font size (in px)
 
-$root: $root-n * 1px;
-$line: $line-n * 1px;
-$em: $base * 1;
-$column: 100% / 14;
+// Set the page margins (14 is nice for 12 col grid…
+// It results in an even column unit for either margin. EG, I'd use 18 for a 16 column grid).
+$margin: 100% / 14;
 
 
 ///* =============================================================================
@@ -60,9 +59,12 @@ $column: 100% / 14;
 // USAGE
 // width: $c6*3; // This is 3 units of a 6 unit grid wide
 // margin-left: $c4*2; // This pushes the element 2 units (of a 4 element grid) to the left
-// @include wrap; // Recomended to change box sizing to border-box for easier styling and positining.
 
-// Have fun. Make as many as you like.
+// You should add @include wrap; to each column adjustment
+// It's recomended to change box sizing to border-box for easier styling and positining.
+// Read more here: http://goldengridsystem.com
+
+// Have fun. Make as many as you like. Simple.
 
 //Three Column Grid
 $c3: 100% / 3;
@@ -86,7 +88,11 @@ $c16: 100% / 16;
 //   Breakpoints
 //   ========================================================================== */
 
+// Adjust according to content not device.
+
 $screenSmall: 49em !default;
 $screenMedium: 80em !default;
 $screenLarge: 112em !default;
 $screenXlarge: 150em !default;
+
+

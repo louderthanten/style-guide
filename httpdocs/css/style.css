@@ -269,8 +269,10 @@ nav ul {
 
 /* line 109, ../../scss/ui/_typography.scss */
 blockquote {
-  padding: 0 15px;
-  padding: 0 0.9375rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -407,8 +409,10 @@ legend.error.block {
 .field {
   clear: both;
   position: relative;
-  padding: 0 15px;
-  padding: 0 0.9375rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -657,8 +661,10 @@ a.button:active {
 .callout {
   overflow: hidden;
   *zoom: 1;
-  padding: 0 15px;
-  padding: 0 0.9375rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
