@@ -1,4 +1,10 @@
 /* line 10, ../../../scss/pages/style-guide.scss */
+section {
+  padding: 72px 0;
+  padding:  4.5rem 0;
+}
+
+/* line 14, ../../../scss/pages/style-guide.scss */
 .header {
   background: #333333;
   color: white;
@@ -6,7 +12,7 @@
   padding:  1.5rem 0;
 }
 
-/* line 16, ../../../scss/pages/style-guide.scss */
+/* line 20, ../../../scss/pages/style-guide.scss */
 .swatch {
   margin: 12px;
   margin: 0.75rem;
@@ -30,17 +36,71 @@
   height: 10px;
 }
 
-/* line 28, ../../../scss/pages/style-guide.scss */
+/* line 32, ../../../scss/pages/style-guide.scss */
 .color1 {
   background: #333333;
 }
 
-/* line 31, ../../../scss/pages/style-guide.scss */
+/* line 35, ../../../scss/pages/style-guide.scss */
 .color2 {
   background: blue;
 }
 
-/* line 34, ../../../scss/pages/style-guide.scss */
+/* line 38, ../../../scss/pages/style-guide.scss */
 .color3 {
   background: red;
+}
+
+/* line 44, ../../../scss/pages/style-guide.scss */
+.grids .container hr {
+  clear: both;
+}
+/* line 47, ../../../scss/pages/style-guide.scss */
+.grids .container div {
+  margin-bottom: 24px;
+  height: 240px;
+  float: left;
+  padding: 0 15px;
+  padding: 0 0.9375rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 53, ../../../scss/pages/style-guide.scss */
+.grids .container div span {
+  display: block;
+  background: #cccccc;
+  width: 100%;
+  height: 240px;
+}
+
+/* line 62, ../../../scss/pages/style-guide.scss */
+.three {
+  width: 33.33333%;
+}
+
+/* line 65, ../../../scss/pages/style-guide.scss */
+.four {
+  width: 25%;
+}
+
+/* line 68, ../../../scss/pages/style-guide.scss */
+.six {
+  width: 16.66667%;
+}
+
+/* line 71, ../../../scss/pages/style-guide.scss */
+.eight {
+  width: 12.5%;
+}
+
+/* line 74, ../../../scss/pages/style-guide.scss */
+.twelve {
+  width: 8.33333%;
+}
+
+/* line 77, ../../../scss/pages/style-guide.scss */
+.sixteen {
+  width: 6.25%;
 }

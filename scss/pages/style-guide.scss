@@ -7,6 +7,10 @@
 @import "settings/variables";
 @import "settings/mixins";
 
+section {
+        @include rem(padding, $line*3 0);
+}
+
 .header {
     background: $dark-grey;
     color:$white;
@@ -33,4 +37,43 @@
 }
 .color3 {
     background: $red;
+}
+
+.grids .container {
+
+    hr {
+        clear:both;
+    }
+    div {
+        margin-bottom: $line;
+        height: $line*10;
+        float:left;
+        @include wrap;
+
+        span {
+            display: block;
+            background:$grey;
+            width:100%;
+            height: $line*10;
+        }
+    }
+}
+
+.three {
+    width:$c3;
+}
+.four {
+    width:$c4;
+}
+.six {
+    width:$c6;
+}
+.eight {
+    width:$c8;
+}
+.twelve {
+    width:$c12;
+}
+.sixteen {
+    width:$c16;
 }
