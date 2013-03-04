@@ -17,6 +17,22 @@ section {
     @include rem(padding, $line 0);
 }
 
+.type-sample {
+    p {
+        @include font-size(36, 48);
+        margin-bottom: $line*1.5;
+        letter-spacing: 0.1em;
+    }
+}
+
+.primary {
+    font-family: $sans;
+}
+.secondary {
+    font-family: $serif;
+}
+
+
 .swatch {
     @include rem(margin, $line/2);
     @include border-radius(500px);

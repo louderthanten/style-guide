@@ -12,7 +12,26 @@ section {
   padding:  1.5rem 0;
 }
 
-/* line 20, ../../../scss/pages/style-guide.scss */
+/* line 21, ../../../scss/pages/style-guide.scss */
+.type-sample p {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.33333;
+  margin-bottom: 36px;
+  letter-spacing: 0.1em;
+}
+
+/* line 28, ../../../scss/pages/style-guide.scss */
+.primary {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* line 31, ../../../scss/pages/style-guide.scss */
+.secondary {
+  font-family: Georgia, serif;
+}
+
+/* line 36, ../../../scss/pages/style-guide.scss */
 .swatch {
   margin: 12px;
   margin: 0.75rem;
@@ -36,26 +55,26 @@ section {
   height: 10px;
 }
 
-/* line 32, ../../../scss/pages/style-guide.scss */
+/* line 48, ../../../scss/pages/style-guide.scss */
 .color1 {
   background: #333333;
 }
 
-/* line 35, ../../../scss/pages/style-guide.scss */
+/* line 51, ../../../scss/pages/style-guide.scss */
 .color2 {
   background: blue;
 }
 
-/* line 38, ../../../scss/pages/style-guide.scss */
+/* line 54, ../../../scss/pages/style-guide.scss */
 .color3 {
   background: red;
 }
 
-/* line 44, ../../../scss/pages/style-guide.scss */
+/* line 60, ../../../scss/pages/style-guide.scss */
 .grids .container hr {
   clear: both;
 }
-/* line 47, ../../../scss/pages/style-guide.scss */
+/* line 63, ../../../scss/pages/style-guide.scss */
 .grids .container div {
   margin-bottom: 24px;
   height: 240px;
@@ -67,7 +86,7 @@ section {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 53, ../../../scss/pages/style-guide.scss */
+/* line 69, ../../../scss/pages/style-guide.scss */
 .grids .container div span {
   display: block;
   background: #cccccc;
@@ -75,32 +94,32 @@ section {
   height: 240px;
 }
 
-/* line 62, ../../../scss/pages/style-guide.scss */
+/* line 78, ../../../scss/pages/style-guide.scss */
 .three {
   width: 33.33333%;
 }
 
-/* line 65, ../../../scss/pages/style-guide.scss */
+/* line 81, ../../../scss/pages/style-guide.scss */
 .four {
   width: 25%;
 }
 
-/* line 68, ../../../scss/pages/style-guide.scss */
+/* line 84, ../../../scss/pages/style-guide.scss */
 .six {
   width: 16.66667%;
 }
 
-/* line 71, ../../../scss/pages/style-guide.scss */
+/* line 87, ../../../scss/pages/style-guide.scss */
 .eight {
   width: 12.5%;
 }
 
-/* line 74, ../../../scss/pages/style-guide.scss */
+/* line 90, ../../../scss/pages/style-guide.scss */
 .twelve {
   width: 8.33333%;
 }
 
-/* line 77, ../../../scss/pages/style-guide.scss */
+/* line 93, ../../../scss/pages/style-guide.scss */
 .sixteen {
   width: 6.25%;
 }
