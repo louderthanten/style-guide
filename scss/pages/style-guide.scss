@@ -7,16 +7,16 @@
 @import "settings/variables";
 @import "settings/mixins";
 
+
+//Decent defaults
 section {
         @include rem(padding, $line*3 0);
 }
-
 .header {
     background: $dark-grey;
     color:$white;
     @include rem(padding, $line 0);
 }
-
 .type-sample {
     p {
         @include font-size(36, 48);
@@ -24,37 +24,6 @@ section {
         letter-spacing: 0.1em;
     }
 }
-
-.primary {
-    font-family: $sans;
-}
-.secondary {
-    font-family: $serif;
-}
-
-
-.swatch {
-    @include rem(margin, $line/2);
-    @include border-radius(500px);
-    @include wrap;
-    @include rem(padding, $line*3);
-    position: relative;
-    display: inline-block;
-    text-indent: -99999px;
-    width: 10px;
-    height: 10px;
-}
-
-.color1 {
-    background:$dark-grey;
-}
-.color2 {
-    background: $blue;
-}
-.color3 {
-    background: $red;
-}
-
 .grids .container {
 
     hr {
@@ -68,13 +37,52 @@ section {
 
         span {
             display: block;
-            background:$grey;
             width:100%;
             height: $line*10;
         }
     }
 }
 
+
+
+
+
+// Adjust Accordingly
+
+// Type samples
+.primary {
+    font-family: $sans;
+}
+.secondary {
+    font-family: $serif;
+}
+
+//Colour swatches
+.swatch {
+    @include rem(margin, $line/2);
+    @include border-radius(500px);
+    @include wrap;
+    @include rem(padding, $line*3);
+    position: relative;
+    display: inline-block;
+    text-indent: -99999px;
+    width: 10px;
+    height: 10px;
+}
+.color1 {
+    background:$dark-grey;
+}
+.color2 {
+    background: $blue;
+}
+.color3 {
+    background: $red;
+}
+
+// Grids
+.grids span {
+    background:$grey;
+}
 .three {
     width:$c3;
 }

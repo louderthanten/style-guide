@@ -1,10 +1,10 @@
-/* line 10, ../../../scss/pages/style-guide.scss */
+/* line 12, ../../../scss/pages/style-guide.scss */
 section {
   padding: 72px 0;
   padding:  4.5rem 0;
 }
 
-/* line 14, ../../../scss/pages/style-guide.scss */
+/* line 15, ../../../scss/pages/style-guide.scss */
 .header {
   background: #333333;
   color: white;
@@ -21,17 +21,40 @@ section {
   letter-spacing: 0.1em;
 }
 
-/* line 28, ../../../scss/pages/style-guide.scss */
+/* line 29, ../../../scss/pages/style-guide.scss */
+.grids .container hr {
+  clear: both;
+}
+/* line 32, ../../../scss/pages/style-guide.scss */
+.grids .container div {
+  margin-bottom: 24px;
+  height: 240px;
+  float: left;
+  padding: 0 15px;
+  padding: 0 0.9375rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 38, ../../../scss/pages/style-guide.scss */
+.grids .container div span {
+  display: block;
+  width: 100%;
+  height: 240px;
+}
+
+/* line 53, ../../../scss/pages/style-guide.scss */
 .primary {
   font-family: "Helvetica Neue", sans-serif;
 }
 
-/* line 31, ../../../scss/pages/style-guide.scss */
+/* line 56, ../../../scss/pages/style-guide.scss */
 .secondary {
   font-family: Georgia, serif;
 }
 
-/* line 36, ../../../scss/pages/style-guide.scss */
+/* line 61, ../../../scss/pages/style-guide.scss */
 .swatch {
   margin: 12px;
   margin: 0.75rem;
@@ -55,71 +78,52 @@ section {
   height: 10px;
 }
 
-/* line 48, ../../../scss/pages/style-guide.scss */
+/* line 72, ../../../scss/pages/style-guide.scss */
 .color1 {
   background: #333333;
 }
 
-/* line 51, ../../../scss/pages/style-guide.scss */
+/* line 75, ../../../scss/pages/style-guide.scss */
 .color2 {
   background: blue;
 }
 
-/* line 54, ../../../scss/pages/style-guide.scss */
+/* line 78, ../../../scss/pages/style-guide.scss */
 .color3 {
   background: red;
 }
 
-/* line 60, ../../../scss/pages/style-guide.scss */
-.grids .container hr {
-  clear: both;
-}
-/* line 63, ../../../scss/pages/style-guide.scss */
-.grids .container div {
-  margin-bottom: 24px;
-  height: 240px;
-  float: left;
-  padding: 0 15px;
-  padding: 0 0.9375rem;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 69, ../../../scss/pages/style-guide.scss */
-.grids .container div span {
-  display: block;
+/* line 83, ../../../scss/pages/style-guide.scss */
+.grids span {
   background: #cccccc;
-  width: 100%;
-  height: 240px;
 }
 
-/* line 78, ../../../scss/pages/style-guide.scss */
+/* line 86, ../../../scss/pages/style-guide.scss */
 .three {
   width: 33.33333%;
 }
 
-/* line 81, ../../../scss/pages/style-guide.scss */
+/* line 89, ../../../scss/pages/style-guide.scss */
 .four {
   width: 25%;
 }
 
-/* line 84, ../../../scss/pages/style-guide.scss */
+/* line 92, ../../../scss/pages/style-guide.scss */
 .six {
   width: 16.66667%;
 }
 
-/* line 87, ../../../scss/pages/style-guide.scss */
+/* line 95, ../../../scss/pages/style-guide.scss */
 .eight {
   width: 12.5%;
 }
 
-/* line 90, ../../../scss/pages/style-guide.scss */
+/* line 98, ../../../scss/pages/style-guide.scss */
 .twelve {
   width: 8.33333%;
 }
 
-/* line 93, ../../../scss/pages/style-guide.scss */
+/* line 101, ../../../scss/pages/style-guide.scss */
 .sixteen {
   width: 6.25%;
 }
