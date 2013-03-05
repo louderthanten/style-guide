@@ -47,12 +47,12 @@ section {
 }
 
 /* line 53, ../../../scss/pages/style-guide.scss */
-.primary {
+.primary * {
   font-family: "Helvetica Neue", sans-serif;
 }
 
 /* line 56, ../../../scss/pages/style-guide.scss */
-.secondary {
+.secondary * {
   font-family: Georgia, serif;
 }
 
