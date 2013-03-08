@@ -34,7 +34,7 @@ This library uses the following:
 * Normalize
 * SCSS
 
-Heavily influenced by:
+Thanks to:
 
 * [Golden Grid System](http://goldengridsystem.com) for its collapsing grid philosophy
 * [Typecast](http://typecast.com) for giving me the idea (and having a great styleguide itself)
