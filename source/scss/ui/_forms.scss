@@ -3,34 +3,35 @@ form {
 }
 
 fieldset {
-  @extend group;
-  @include rem(padding, $line 0);
-  @include rem(margin-bottom, $line);
-  position: relative;
-  display: block;
-  border-bottom: $rule;
-
+	@extend .group;
+	@include rem(padding, $line 0);
+	@include rem(margin-bottom, $line);
+	position: relative;
+	display: block;
+	border:0;
+	border-bottom: $rule;
 }
 
 label,
 legend {
-
-  &.error {
-    //display: none;
-    position: absolute;
-    left:0;
-    bottom:0;
+	&.error {
+	    display: none;
+	    position: absolute;
+	    left:0;
+	    bottom:0;
   
-    &.block { display: block; }
-  }
+	    &.block {
+	    	display: block;
+	    }
+	}
 }
 
 .field {
-  clear:both;
-  position:relative;
-  @include wrap;
-  padding:0;
-  @include rem(padding-bottom, $line);
+	clear:both;
+	position:relative;
+	@include wrap;
+	padding:0;
+	@include rem(padding-bottom, $line);
 } 
 
 input[type="text"],
@@ -46,26 +47,27 @@ input[type="week"],
 input[type="datetime-local"],
 input[type="number"],
 input[type="color"] {
-  border: $rule;
+	border: $rule;
 	display:block;
 	outline:0;
-  width:100%;
-  font-family: $serif;
-  @include rem(padding, $line/4 $line/2);
-  @include font-size;
-  @include border-radius(5px);
-  -webkit-appearance: none;
+	width:100%;
+	font-family: $serif;
+	@include rem(padding, $line/4 $line/2);
+	@include font-size;
+	@include border-radius;
+	@include wrap;
+	-webkit-appearance: none;
 
-  &.error {
-    border:$red-rule;
-    color:$red;
-  }
+	&.error {
+		border:$red-rule;
+		color:$red;
+	}
 }
 
 textarea {
 	@extend input[type="text"];
 	height: auto;
-  min-height: $line*10;
+	 min-height: $line*10;
 }
 
 select {

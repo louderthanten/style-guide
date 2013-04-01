@@ -747,23 +747,25 @@ fieldset {
   margin-bottom: 1.5rem;
   position: relative;
   display: block;
+  border: 0;
   border-bottom: 1px solid #333333;
 }
 
-/* line 18, ../../source/scss/ui/_forms.scss */
+/* line 17, ../../source/scss/ui/_forms.scss */
 label.error,
 legend.error {
+  display: none;
   position: absolute;
   left: 0;
   bottom: 0;
 }
-/* line 24, ../../source/scss/ui/_forms.scss */
+/* line 23, ../../source/scss/ui/_forms.scss */
 label.error.block,
 legend.error.block {
   display: block;
 }
 
-/* line 28, ../../source/scss/ui/_forms.scss */
+/* line 29, ../../source/scss/ui/_forms.scss */
 .field {
   clear: both;
   position: relative;
@@ -780,7 +782,7 @@ legend.error.block {
   padding-bottom: 1.5rem;
 }
 
-/* line 48, ../../source/scss/ui/_forms.scss */
+/* line 49, ../../source/scss/ui/_forms.scss */
 input[type="text"], textarea,
 input[type="email"],
 input[type="tel"],
@@ -809,9 +811,17 @@ input[type="color"] {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
 }
-/* line 59, ../../source/scss/ui/_forms.scss */
+/* line 61, ../../source/scss/ui/_forms.scss */
 input[type="text"].error, textarea.error,
 input[type="email"].error,
 input[type="tel"].error,
@@ -829,7 +839,7 @@ input[type="color"].error {
   color: red;
 }
 
-/* line 65, ../../source/scss/ui/_forms.scss */
+/* line 67, ../../source/scss/ui/_forms.scss */
 textarea {
   height: auto;
   min-height: 240px;
