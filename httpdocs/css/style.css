@@ -717,28 +717,6 @@ pre mark {
   /* [4] */
 }
 
-/* line 1, ../../source/scss/ui/_tables.scss */
-table {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-  width: 100%;
-}
-
-/* line 6, ../../source/scss/ui/_tables.scss */
-th,
-td {
-  border: 1px solid #333333;
-  text-align: left;
-  font-family: "Helvetica Neue", sans-serif;
-  padding: 6px;
-  padding: 0.375rem;
-}
-
-/* line 13, ../../source/scss/ui/_tables.scss */
-th {
-  background: #cccccc;
-}
-
 /* line 5, ../../source/scss/ui/_forms.scss */
 fieldset {
   padding: 24px 0;
@@ -1023,6 +1001,44 @@ a.button:active {
     border-right: 0;
   }
 }
+/* line 1, ../../source/scss/ui/_media.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 6, ../../source/scss/ui/_media.scss */
+figure img {
+  display: block;
+}
+
+/* line 13, ../../source/scss/ui/_media.scss */
+.img--right {
+  float: right;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  margin-left: 24px;
+  margin-left: 1.5rem;
+}
+
+/* line 18, ../../source/scss/ui/_media.scss */
+.img--left {
+  float: left;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  margin-right: 24px;
+  margin-right: 1.5rem;
+}
+
+/* line 23, ../../source/scss/ui/_media.scss */
+.img--center {
+  display: block;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* line 1, ../../source/scss/ui/_callouts.scss */
 .callout {
   overflow: hidden;
@@ -1048,6 +1064,28 @@ a.button:active {
 .callout > h5,
 .callout > h6 {
   margin-top: 0;
+}
+
+/* line 1, ../../source/scss/ui/_tables.scss */
+table {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+/* line 6, ../../source/scss/ui/_tables.scss */
+th,
+td {
+  border: 1px solid #333333;
+  text-align: left;
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 6px;
+  padding: 0.375rem;
+}
+
+/* line 13, ../../source/scss/ui/_tables.scss */
+th {
+  background: #cccccc;
 }
 
 /* line 3, ../../source/scss/ui/_animation.scss */

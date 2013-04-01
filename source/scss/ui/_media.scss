@@ -1,0 +1,28 @@
+img {
+    max-width: 100%;
+    height:auto;
+}
+figure {
+    img {
+        display: block;
+    }
+}
+
+
+// Image placement variations. From Inuit.css http://inuitcss.com
+.img--right{
+    float:right;
+    @include rem(margin-bottom, $line);
+    @include rem(margin-left, $line);
+}
+.img--left{
+    float:left;
+    @include rem(margin-bottom, $line);
+    @include rem(margin-right, $line);
+}
+.img--center{
+    display:block;
+    @include rem(margin-bottom, $line);
+    margin-right:auto;
+    margin-left:auto;
+}
