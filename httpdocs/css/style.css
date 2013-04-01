@@ -677,6 +677,46 @@ a:hover, a:active {
   visibility: hidden;
 }
 
+/* line 6, ../../source/scss/ui/_code.scss */
+code,
+pre {
+  font-family: monospace;
+}
+
+/* line 11, ../../source/scss/ui/_code.scss */
+pre {
+  overflow: auto;
+}
+/* line 14, ../../source/scss/ui/_code.scss */
+pre mark {
+  background: none;
+  border-bottom: 1px solid;
+  color: inherit;
+}
+
+/* line 25, ../../source/scss/ui/_code.scss */
+.code-comment {
+  color: #cccccc;
+}
+
+/* line 50, ../../source/scss/ui/_code.scss */
+.line-numbers {
+  font-family: monospace;
+  /* [1] */
+  list-style: decimal-leading-zero inside;
+  /* [2] */
+  white-space: nowrap;
+  /* [3] */
+  overflow: auto;
+  /* [3] */
+  margin-left: 0;
+}
+/* line 57, ../../source/scss/ui/_code.scss */
+.line-numbers .line-numbers code {
+  white-space: pre;
+  /* [4] */
+}
+
 /* line 1, ../../source/scss/ui/_tables.scss */
 table {
   margin-bottom: 24px;
