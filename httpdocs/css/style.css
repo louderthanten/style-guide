@@ -405,17 +405,34 @@ table {
 }
 
 /* line 1, ../../source/scss/global/_layout.scss */
-section {
-  position: relative;
-  overflow: hidden;
-  *zoom: 1;
+html {
+  font-size: 85%;
+  min-height: 100%;
+  overflow-y: scroll;
 }
 
-/* line 5, ../../source/scss/global/_layout.scss */
+/* line 6, ../../source/scss/global/_layout.scss */
+section {
+  position: relative;
+}
+
+/* line 10, ../../source/scss/global/_layout.scss */
 .container {
   margin: 0 7.14286%;
 }
 
+@media only screen and (min-width: 49em) {
+  /* line 15, ../../source/scss/global/_layout.scss */
+  html {
+    font-size: 100%;
+  }
+}
+@media only screen and (min-width: 150em) {
+  /* line 21, ../../source/scss/global/_layout.scss */
+  html {
+    font-size: 115%;
+  }
+}
 /* line 4, ../../source/scss/ui/_typography.scss */
 body {
   font-family: Georgia, serif;
@@ -446,7 +463,7 @@ h1 {
 h2 {
   font-size: 48px;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.25;
 }
 
 /* line 25, ../../source/scss/ui/_typography.scss */
@@ -478,19 +495,25 @@ h6 {
 }
 
 /* line 38, ../../source/scss/ui/_typography.scss */
-.content {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-}
-
-/* line 42, ../../source/scss/ui/_typography.scss */
 p {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
-/* line 45, ../../source/scss/ui/_typography.scss */
+/* line 43, ../../source/scss/ui/_typography.scss */
+.content {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/* line 46, ../../source/scss/ui/_typography.scss */
+.content p {
+  margin-bottom: 0;
+}
+
+/* line 52, ../../source/scss/ui/_typography.scss */
 .lead {
   font-size: 24px;
   font-size: 1.5rem;
@@ -499,74 +522,76 @@ p {
   margin-bottom: 0.75rem;
 }
 
-/* line 49, ../../source/scss/ui/_typography.scss */
+/* line 56, ../../source/scss/ui/_typography.scss */
 p + p {
-  text-indent: 2.5em;
+  text-indent: 2em;
 }
 
-/* line 52, ../../source/scss/ui/_typography.scss */
+/* line 59, ../../source/scss/ui/_typography.scss */
 br + p {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
-/* line 56, ../../source/scss/ui/_typography.scss */
+/* line 63, ../../source/scss/ui/_typography.scss */
 br + p + p,
 .lead + p {
   text-indent: 0;
 }
 
-/* line 60, ../../source/scss/ui/_typography.scss */
+/* line 67, ../../source/scss/ui/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 63, ../../source/scss/ui/_typography.scss */
+/* line 70, ../../source/scss/ui/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 66, ../../source/scss/ui/_typography.scss */
+/* line 73, ../../source/scss/ui/_typography.scss */
 abbr {
   cursor: help;
 }
-/* line 69, ../../source/scss/ui/_typography.scss */
+/* line 76, ../../source/scss/ui/_typography.scss */
 abbr.acr {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
 }
 
-/* line 73, ../../source/scss/ui/_typography.scss */
+/* line 80, ../../source/scss/ui/_typography.scss */
 .amp {
   font-style: italic;
 }
 
-/* line 76, ../../source/scss/ui/_typography.scss */
+/* line 83, ../../source/scss/ui/_typography.scss */
 small {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.28571;
+  line-height: 1.14286;
 }
 
-/* line 80, ../../source/scss/ui/_typography.scss */
+/* line 87, ../../source/scss/ui/_typography.scss */
 figcaption {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
 }
-/* line 83, ../../source/scss/ui/_typography.scss */
+/* line 90, ../../source/scss/ui/_typography.scss */
 figcaption .source {
   float: right;
 }
 
-/* line 90, ../../source/scss/ui/_typography.scss */
+/* line 97, ../../source/scss/ui/_typography.scss */
 ul,
 ol,
 dd {
-  margin-bottom: 24px;
+  padding: 0;
+  margin: 0 0 24px 0;
+  margin:  0 0 1.5rem 0;
 }
-/* line 94, ../../source/scss/ui/_typography.scss */
+/* line 103, ../../source/scss/ui/_typography.scss */
 ul ul,
 ul ol,
 ol ul,
@@ -577,17 +602,17 @@ dd ol {
   margin-bottom: 0;
 }
 
-/* line 99, ../../source/scss/ui/_typography.scss */
+/* line 108, ../../source/scss/ui/_typography.scss */
 dt {
   font-weight: 700;
 }
 
-/* line 104, ../../source/scss/ui/_typography.scss */
+/* line 113, ../../source/scss/ui/_typography.scss */
 nav ul {
   list-style: none;
 }
 
-/* line 109, ../../source/scss/ui/_typography.scss */
+/* line 118, ../../source/scss/ui/_typography.scss */
 blockquote {
   padding-left: 12px;
   padding-left: 0.75rem;
@@ -603,26 +628,27 @@ blockquote {
   margin:  1.5rem 0;
   border-left: 1px solid #333333;
 }
-/* line 114, ../../source/scss/ui/_typography.scss */
+/* line 124, ../../source/scss/ui/_typography.scss */
 blockquote p {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.5;
   font-style: italic;
+  margin-bottom: 0;
 }
-/* line 118, ../../source/scss/ui/_typography.scss */
+/* line 129, ../../source/scss/ui/_typography.scss */
 blockquote .source {
   font-size: inherit;
   font-style: normal;
   text-align: right;
 }
 
-/* line 125, ../../source/scss/ui/_typography.scss */
+/* line 137, ../../source/scss/ui/_typography.scss */
 label {
   display: block;
 }
 
-/* line 129, ../../source/scss/ui/_typography.scss */
+/* line 141, ../../source/scss/ui/_typography.scss */
 sup {
   height: 0;
   line-height: 1;
@@ -631,7 +657,7 @@ sup {
   bottom: .5ex;
 }
 
-/* line 137, ../../source/scss/ui/_typography.scss */
+/* line 149, ../../source/scss/ui/_typography.scss */
 hr {
   border: 0;
   height: 0;
@@ -642,25 +668,12 @@ hr {
   margin-bottom: 1.5rem;
 }
 
-/* line 145, ../../source/scss/ui/_typography.scss */
-a {
-  text-decoration: none;
-}
-/* line 149, ../../source/scss/ui/_typography.scss */
-a:link, a:visited {
-  color: red;
-}
-/* line 153, ../../source/scss/ui/_typography.scss */
-a:hover, a:active {
-  color: blue;
-}
-
-/* line 158, ../../source/scss/ui/_typography.scss */
+/* line 157, ../../source/scss/ui/_typography.scss */
 .error {
   color: red;
 }
 
-/* line 175, ../../source/scss/ui/_typography.scss */
+/* line 174, ../../source/scss/ui/_typography.scss */
 .wf-loading p,
 .wf-loading h1,
 .wf-loading h2,
@@ -675,6 +688,19 @@ a:hover, a:active {
 .wf-loading th,
 .wf-loading small {
   visibility: hidden;
+}
+
+/* line 1, ../../source/scss/ui/_links.scss */
+a {
+  text-decoration: none;
+}
+/* line 5, ../../source/scss/ui/_links.scss */
+a:link, a:visited {
+  color: red;
+}
+/* line 9, ../../source/scss/ui/_links.scss */
+a:hover, a:active {
+  color: blue;
 }
 
 /* line 6, ../../source/scss/ui/_code.scss */
@@ -1086,6 +1112,11 @@ td {
 /* line 13, ../../source/scss/ui/_tables.scss */
 th {
   background: #cccccc;
+}
+
+/* line 16, ../../source/scss/ui/_tables.scss */
+.numeric {
+  text-align: right;
 }
 
 /* line 3, ../../source/scss/ui/_animation.scss */

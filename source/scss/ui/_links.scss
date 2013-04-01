@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+       color: $red;
+    }
+    &:hover,
+    &:active {
+      color: $blue;
+    }
+}

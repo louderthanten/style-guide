@@ -17,37 +17,44 @@ h6 {
 }
 
 h1 {
-    @include font-size(60, 72);
+    @include font-size(60, $line-n*3);
 }
 h2 {
-    @include font-size(48, 56);
+    @include font-size(48, $line-n*2.5);
 }
 h3 {
-    @include font-size(36, 48);
+    @include font-size(36, $line-n*2);
 }
 h4 {
-    @include font-size(30, 36);
+    @include font-size(30, $line-n*1.5);
 }
 h5 {
-    @include font-size(24, 30);
+    @include font-size(24, $line-n*1.25);
 }
 h6 {
-    @include font-size(18, 24);
-}
-
-.content {
-    @include rem(margin-bottom, $line);
+    @include font-size(18, $line-n);
 }
 
 p {
     @include hyphens;
+    @include rem(margin-bottom, $line/2);
 }
+
+.content {
+    @include rem(margin-bottom, $line);
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+
 .lead {
-    @include font-size(24, 36);
+    @include font-size(24, $line-n*1.5);
     @include rem(margin-bottom, $line/2);
 }
 p + p {
-    text-indent: 2.5em;
+    text-indent: 2em;
 }
 br + p {
     @include rem(margin-bottom, $line);
@@ -67,18 +74,18 @@ abbr {
     cursor: help;
 
     &.acr {
-        @include font-size(14, 24);
+        @include font-size(14, $line-n);
     }
 }
 .amp {
     font-style: italic;
 }
 small {
-    @include font-size(14, 18);
+    @include font-size(14, $line-n/1.5);
 }
 
 figcaption {
-    @include font-size(14, 24);
+    @include font-size(14, $line-n);
 
     .source {
         float:right;
@@ -88,7 +95,9 @@ figcaption {
 ul,
 ol,
 dd {
-    margin-bottom: $line;
+    padding:0;
+    @include rem(margin, 0 0 $line 0);
+
 
     ul,
     ol {
@@ -111,9 +120,11 @@ blockquote {
     @include rem(padding, $line/2 0 $line/2 $line*2);
     @include rem(margin, $line 0);
     border-left:$rule;
+
     p {
-        @include font-size(24, 36);
+        @include font-size(24, $line-n*1.5);
         font-style: italic;
+        margin-bottom: 0;
     }
     .source {
         font-size: inherit;
@@ -121,6 +132,7 @@ blockquote {
         text-align: right;
     }
 }
+
 
 label {
     display: block;
@@ -140,19 +152,6 @@ hr {
     border-top: $rule;
     @include rem(margin-top, $line);
     @include rem(margin-bottom, $line);
-}
-
-a {
-    text-decoration: none;
-
-    &:link,
-    &:visited {
-       color: $red;
-    }
-    &:hover,
-    &:active {
-      color: $blue;
-    }
 }
 
 .error {
