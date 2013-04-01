@@ -3,7 +3,7 @@ form {
 }
 
 fieldset {
-  @include clearfix;
+  @extend group;
   @include rem(padding, $line 0);
   @include rem(margin-bottom, $line);
   position: relative;
@@ -70,109 +70,4 @@ textarea {
 
 select {
 
-}
-
-button,
-.button,
-input[type="submit"],
-a.button:link,
-a.button:visited {
-  @include rem(padding, $line/4 $line/2);
-  @include border-radius(5px);
-  @include font-size;
-  border:0;
-  background: $red;
-  color:$white;
-  cursor: pointer;
-  display: inline-block;
-  font-family: $sans;
-  text-align: center;
-
-  &.small {
-    @include font-size(14, 20);
-    @include rem(padding, $line/6 $line/3);
-  }
-  &.large {
-    @include font-size(30.006, 40);
-    @include rem(padding, $line/2 $line);
-  }
-
-  &.disabled {
-    background:$grey;
-    cursor: default;
-  }
-
-  &.blue {
-    background: $blue;
-
-    &:hover,
-    &:active {
-      background: $red;
-    }
-  }
-}
-button:hover,
-button:active,
-input[type="submit"]:hover,
-input[type="submit"]:active,
-a.button:hover,
-a.button:active {
-  background:$blue;
-}
-
-.button-group {
-  @include clearfix;
-  @include rem(margin-bottom, $line);
-  position:relative;
-  display:block;
-
-  a.button {
-    margin:0;
-    display: block;
-    border-bottom: $white-rule;
-    @include border-radius(0px);
-
-    &:first-child {
-      @include border-top-left-radius(5px);
-      @include border-top-right-radius(5px);
-    }
-    &:last-child {
-      @include border-bottom-right-radius(5px);
-      @include border-bottom-left-radius(5px);
-      border-bottom:0;
-    }
-  }
-}
-
-.button-groups {
-  @include clearfix;
-  position:relative;
-}
-
-@media only screen and (min-width: $screenSmall) {
-  .button-groups .button-group {
-    float:left;
-    @include rem(margin-right, $line);
-  }
-  .button-group {
-
-    a.button {
-      float:left;
-      border-right:$white-rule;
-      border-bottom: 0;
-      @include border-radius(0px);
-
-      &:first-child {
-        @include border-bottom-left-radius(5px);
-        @include border-top-left-radius(5px);
-        @include border-top-right-radius(0px);
-      }
-      &:last-child {
-        @include border-bottom-right-radius(5px);
-        @include border-top-right-radius(5px);
-        @include border-bottom-left-radius(0px);
-        border-right:0;
-      }
-    }
-  }
 }
