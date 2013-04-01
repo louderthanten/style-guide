@@ -1092,6 +1092,12 @@ figure img {
   margin-top: 0;
 }
 
+/**
+ * Forms the basis for any/all CSS arrows.
+ */
+/**
+ * Define individual edges so we can combine what we need, when we need.
+ */
 /* line 1, ../../source/scss/ui/_tables.scss */
 table {
   margin-bottom: 24px;
