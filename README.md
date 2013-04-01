@@ -36,7 +36,7 @@ This library uses the following:
 * [Compass](http://compass-style.org)
 * A couple odds n' ends from [Inuit.css](http://inuitcss.com)
 
-Also, thanks to:
+Huge thanks to the people that work on these great tools and release them to the world for free. Also, thanks to:
 
 * [Golden Grid System](http://goldengridsystem.com) for its collapsing grid philosophy
 * [Typecast](http://typecast.com) for giving me the idea (and having a great styleguide itself)
