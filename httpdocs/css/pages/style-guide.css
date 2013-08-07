@@ -1,10 +1,10 @@
-/* line 12, ../../../scss/pages/style-guide.scss */
+/* line 12, ../../../source/scss/pages/style-guide.scss */
 section {
   padding: 72px 0;
   padding:  4.5rem 0;
 }
 
-/* line 15, ../../../scss/pages/style-guide.scss */
+/* line 15, ../../../source/scss/pages/style-guide.scss */
 .header {
   background: #333333;
   color: white;
@@ -12,7 +12,7 @@ section {
   padding:  1.5rem 0;
 }
 
-/* line 21, ../../../scss/pages/style-guide.scss */
+/* line 21, ../../../source/scss/pages/style-guide.scss */
 .type-sample p {
   font-size: 36px;
   font-size: 2.25rem;
@@ -21,11 +21,11 @@ section {
   letter-spacing: 0.1em;
 }
 
-/* line 29, ../../../scss/pages/style-guide.scss */
+/* line 29, ../../../source/scss/pages/style-guide.scss */
 .grids .container hr {
   clear: both;
 }
-/* line 32, ../../../scss/pages/style-guide.scss */
+/* line 32, ../../../source/scss/pages/style-guide.scss */
 .grids .container div {
   margin-bottom: 24px;
   height: 240px;
@@ -39,27 +39,27 @@ section {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 38, ../../../scss/pages/style-guide.scss */
+/* line 38, ../../../source/scss/pages/style-guide.scss */
 .grids .container div span {
   display: block;
   width: 100%;
   height: 240px;
 }
 
-/* line 53, ../../../scss/pages/style-guide.scss */
+/* line 53, ../../../source/scss/pages/style-guide.scss */
 .primary * {
   font-family: "Helvetica Neue", sans-serif;
 }
 
-/* line 56, ../../../scss/pages/style-guide.scss */
+/* line 56, ../../../source/scss/pages/style-guide.scss */
 .secondary * {
   font-family: Georgia, serif;
 }
 
-/* line 61, ../../../scss/pages/style-guide.scss */
+/* line 61, ../../../source/scss/pages/style-guide.scss */
 .swatch {
-  margin: 12px;
-  margin: 0.75rem;
+  margin: 12px 12px 48px 12px;
+  margin:  0.75rem 0.75rem 3rem 0.75rem;
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
   -ms-border-radius: 500px;
@@ -77,84 +77,91 @@ section {
   padding: 4.5rem;
   position: relative;
   display: inline-block;
-  text-indent: -99999px;
+  text-align: center;
   width: 10px;
   height: 10px;
 }
+/* line 72, ../../../source/scss/pages/style-guide.scss */
+.swatch p {
+  position: absolute;
+  bottom: -2.75em;
+  left: 0;
+  width: 100%;
+}
 
-/* line 72, ../../../scss/pages/style-guide.scss */
+/* line 79, ../../../source/scss/pages/style-guide.scss */
 .color1 {
   background: #333333;
 }
 
-/* line 75, ../../../scss/pages/style-guide.scss */
+/* line 82, ../../../source/scss/pages/style-guide.scss */
 .color2 {
   background: blue;
 }
 
-/* line 78, ../../../scss/pages/style-guide.scss */
+/* line 85, ../../../source/scss/pages/style-guide.scss */
 .color3 {
   background: red;
 }
 
-/* line 83, ../../../scss/pages/style-guide.scss */
+/* line 90, ../../../source/scss/pages/style-guide.scss */
 .grids span {
   background: #cccccc;
 }
 
-/* line 86, ../../../scss/pages/style-guide.scss */
+/* line 93, ../../../source/scss/pages/style-guide.scss */
 .three {
   width: 33.33333%;
 }
 
-/* line 89, ../../../scss/pages/style-guide.scss */
+/* line 96, ../../../source/scss/pages/style-guide.scss */
 .four {
   width: 25%;
 }
 
-/* line 92, ../../../scss/pages/style-guide.scss */
+/* line 99, ../../../source/scss/pages/style-guide.scss */
 .six {
   width: 16.66667%;
 }
 
-/* line 95, ../../../scss/pages/style-guide.scss */
+/* line 102, ../../../source/scss/pages/style-guide.scss */
 .eight {
   width: 12.5%;
 }
 
-/* line 98, ../../../scss/pages/style-guide.scss */
+/* line 105, ../../../source/scss/pages/style-guide.scss */
 .twelve {
   width: 8.33333%;
 }
 
-/* line 101, ../../../scss/pages/style-guide.scss */
+/* line 108, ../../../source/scss/pages/style-guide.scss */
 .sixteen {
   width: 6.25%;
 }
 
-/* line 107, ../../../scss/pages/style-guide.scss */
+/* line 114, ../../../source/scss/pages/style-guide.scss */
 .folding.six, .folding.twelve {
   display: none;
 }
-/* line 110, ../../../scss/pages/style-guide.scss */
+/* line 117, ../../../source/scss/pages/style-guide.scss */
 .folding.three {
   display: block !important;
   width: 33.33333%;
 }
 
 @media only screen and (min-width: 49em) {
-  /* line 118, ../../../scss/pages/style-guide.scss */
+  /* line 125, ../../../source/scss/pages/style-guide.scss */
   .folding.twelve {
     display: none;
   }
-  /* line 121, ../../../scss/pages/style-guide.scss */
+  /* line 128, ../../../source/scss/pages/style-guide.scss */
   .folding.six {
     display: block;
     width: 16.66667%;
   }
 }
 @media only screen and (min-width: 80em) {
-  /* line 129, ../../../scss/pages/style-guide.scss */
+  /* line 136, ../../../source/scss/pages/style-guide.scss */
   .folding.twelve {
     display: block;
     width: 8.33333%;

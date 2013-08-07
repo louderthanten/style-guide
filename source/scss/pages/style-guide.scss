@@ -59,15 +59,22 @@ section {
 
 //Colour swatches
 .swatch {
-    @include rem(margin, $line/2);
+    @include rem(margin, $line/2 $line/2 $line*2 $line/2);
     @include border-radius(500px);
     @include wrap;
     @include rem(padding, $line*3);
     position: relative;
     display: inline-block;
-    text-indent: -99999px;
+    text-align: center;
     width: 10px;
     height: 10px;
+
+    p {
+        position: absolute;
+        bottom:-2.75em;
+        left:0;
+        width:100%;
+    }
 }
 .color1 {
     background:$dark-grey;
